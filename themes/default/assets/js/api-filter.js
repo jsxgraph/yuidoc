@@ -14,10 +14,6 @@ Y.APIFilter = Y.Base.create('apiFilter', Y.Base, [Y.AutoCompleteBase], {
             }
         });
 
-        if (this.get('queryType') === 'elements') {
-            name = '&lt;' + name + '&gt;';
-        }
-
         return name;
     }
 
